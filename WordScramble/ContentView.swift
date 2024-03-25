@@ -30,7 +30,7 @@ struct ContentView: View {
         }
         .listStyle(.grouped)
         
-        List(0..<4) {
+        List(1..<4) {
             Text("dynamic list \($0)")
         }
     }
