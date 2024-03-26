@@ -73,8 +73,6 @@ struct ContentView: View {
                     oldNumberScore.insert(currentScore, at: 0)
                     oldRootWords.insert(rootWord, at: 0)
                     startGame()
-                    usedWords.removeAll()
-                    currentScore = 0
                 }
             }
             .onSubmit { addNewWord() }
@@ -141,6 +139,12 @@ struct ContentView: View {
                 
                 // 4. Pick one random word
                 rootWord = allWords.randomElement() ?? "Silkwork"
+                
+                // Challenge 2
+                usedWords.removeAll()
+                
+                // Challenge 3
+                currentScore = 0
                 // if we reached this point everything worked and we can exit
                 return
             }
