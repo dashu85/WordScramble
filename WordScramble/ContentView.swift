@@ -73,7 +73,7 @@ struct ContentView: View {
                     oldNumberScore.insert(currentScore, at: 0)
                     oldRootWords.insert(rootWord, at: 0)
                     startGame()
-                    usedWords = [String]()
+                    usedWords.removeAll()
                     currentScore = 0
                 }
             }
