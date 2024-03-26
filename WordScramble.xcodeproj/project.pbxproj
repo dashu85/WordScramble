@@ -11,6 +11,7 @@
 		29C4F9C12BAF355A008EA1F2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C4F9C02BAF355A008EA1F2 /* ContentView.swift */; };
 		29C4F9C32BAF355B008EA1F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29C4F9C22BAF355B008EA1F2 /* Assets.xcassets */; };
 		29C4F9C72BAF355B008EA1F2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29C4F9C62BAF355B008EA1F2 /* Preview Assets.xcassets */; };
+		29C4F9CE2BB1A2C2008EA1F2 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 29C4F9CD2BB1A2C2008EA1F2 /* start.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		29C4F9C22BAF355B008EA1F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29C4F9C42BAF355B008EA1F2 /* WordScramble.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WordScramble.entitlements; sourceTree = "<group>"; };
 		29C4F9C62BAF355B008EA1F2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		29C4F9CD2BB1A2C2008EA1F2 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				29C4F9C62BAF355B008EA1F2 /* Preview Assets.xcassets */,
+				29C4F9CD2BB1A2C2008EA1F2 /* start.txt */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -128,6 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29C4F9C72BAF355B008EA1F2 /* Preview Assets.xcassets in Resources */,
+				29C4F9CE2BB1A2C2008EA1F2 /* start.txt in Resources */,
 				29C4F9C32BAF355B008EA1F2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
