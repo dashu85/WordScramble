@@ -21,7 +21,6 @@ struct ContentView: View {
     @State private var showingError = false
     
     @State private var showingResults = false
-
     
     var body: some View {
         NavigationStack {
@@ -40,12 +39,6 @@ struct ContentView: View {
                     }
                 }
                 
-                Section("Current score: ") {
-                    Text("\(currentScore)")
-                        .font(.headline)
-                        .bold()
-                        .frame(maxWidth: .infinity, alignment: .center)
-                }
                 if showingResults {
                     Section("Results:") {
                         HStack {
@@ -58,7 +51,7 @@ struct ContentView: View {
                             Spacer()
                             
                             VStack {
-                                ForEach(0 ..< oldRootWords.count, id: \.self) { value in
+                                ForEach(0 ..< oldNumberScore.count, id: \.self) { value in
                                     Text("\(oldNumberScore[value]) Points")
                                 }
                             }
@@ -81,6 +74,10 @@ struct ContentView: View {
             .alert(errorTitle, isPresented: $showingError) { } message: {
                 Text(errorMessage)
             }
+            
+            // showing the current Score
+            Text("Score: \(currentScore)")
+                .font(.title3)
         }
     }
     
@@ -113,7 +110,7 @@ struct ContentView: View {
         }
         
         // validation to check if the word is rootWord
-        guard isStartNotWord(word: answer) else {
+        guard isNotRootWord(word: answer) else {
             wordError(title: "No no", message: "You can't use the same word!")
             return
         }
@@ -178,12 +175,8 @@ struct ContentView: View {
         return misspelledRange.location == NSNotFound
     }
     
-    func isStartNotWord(word: String) -> Bool {
-        if word != rootWord {
-        return true
-        } else {
-            return false
-        }
+    func isNotRootWord(word: String) -> Bool {
+        return word != rootWord
     }
     
     func wordError(title: String, message: String) {
